@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="image/TajmahalTBookmarkBrass_800x.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+    <div class="container m-auto ">
+      <h1 class="text-center fs-0">Bookmarker</h1>
+      <div class="dashed-line"></div>
+      <h2 class="text-center pt-3"><i class='bx bxs-bookmark bx-tada' style='color:#f0b317' ></i><span class="Bookmark">Bookmark your favorite sites</span><i class='bx bxs-bookmark bx-tada' style='color:#f0b317' ></i></h2>
+      <div>
+          <form id="crudForm" class="form">
+              <label for="siteName"  class="pt-4"> <i class='bx bxs-book-bookmark pe-2 fw-bold'></i> <span class="fw-bold fs-5">Site Name</span></label>
+              <input type="text" id="siteName"placeholder="BOOK Mark Name " class="form-control">
+              <label for="siteURL"><i class='bx bx-link pe-2 fw-bold'></i><span class="fw-bold fs-5">Site URL</span></label>
+              <input type="url" id="siteURL"placeholder="Website URL" class="form-control">
+              <div class="d-flex justify-content-center align-content-center align-items-center">
+                  <button type="submit" onclick="add()" class="p-3 pe-5  ps-5 btn btn-warning">Add Item</button>
+              </div>
+      </div>  
+        </form >
+        <div class="dashed-line"></div>
+        <div class="my-3">
+          <table class="table table-hover table-light table table-sm tab-pane " >
+              <thead class="ps-4 ">
+                <tr >
+                  <th scope="col" class="fw-bold ps-3"><i class='bx bxs-down-arrow bx-fade-up' style='color:#151515' ></i></th>
+                  <th scope="col" class="fw-bold">Website Name</th>
+                  <th scope="col" class="fw-bold">Visit</th>
+                  <th scope="col " class="fw-bold"> Delete</th>
+                </tr>
+              </thead>
+              <tbody id="table-group-divider">
+              </tbody>
+            </table>
+      </div>
+  </div>
+  </main>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
